@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function addItemToCart() {
         const productName = document.querySelector('.product-name').textContent;
-        const productPrice = parseFloat(document.querySelector('.product-price').textContent.replace('$', ''));
+        const productPrice = parseFloat(document.querySelector('.product-price').textContent.replace('R$', ''));
         const quantity = parseInt(document.getElementById('quantity').value);
 
         const existingItemIndex = cart.findIndex(item => item.name === productName);
