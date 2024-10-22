@@ -107,6 +107,107 @@ section {
     gap: 40px;
 }
 
+.cart-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.cart-checkbox {
+    display: none;
+}
+
+.cart-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    z-index: 100;
+}
+
+.cart-checkbox:checked ~ .cart-menu {
+    right: 0;
+}
+
+#cart-items {
+    margin: 20px 0;
+    border-bottom: 1px solid white;
+}
+
+.cart-menu h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    margin-bottom: 20px;
+}
+
+.cart-item p {
+    font-size: 1rem;
+}
+
+.subtotal {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.checkout-button {
+    font-family: "Bebas Neue", sans-serif;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.checkout-button:hover {
+    background-color: #33ff00;
+}
+
+.remove-item {
+    font-family: "Bebas Neue", sans-serif;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.remove-item:hover {
+    background-color: darkred;
+}
+
+.cart-item-quantity {
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+}
+
+
+
 .product-gallery {
     display: flex;
     flex-direction: row;
@@ -154,7 +255,7 @@ section {
 
 .product-price {
     font-size: 1.5rem;
-    color: #00ff22;
+    color: #00ff0d;
     margin-bottom: 15px;
 }
 
