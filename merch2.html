@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bandana Dusadusa</title>
+    <title>All Red Hat Boxset</title>
     <link rel="stylesheet" href="merch2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,20 @@
         </ul>
     </nav>
 
-    <div class="carrinho"><img src="./IMG/carrinho.png" alt="">
+    <input type="checkbox" id="cart-toggle" class="cart-checkbox">
+    <label for="cart-toggle" class="cart-icon">
+        <img src="./IMG/carrinho.png" alt="Carrinho">
+    </label>
+
+    <div id="cart-menu" class="cart-menu">
+        <h2>Seu Carrinho</h2>
+        <div id="cart-items">
+            <p>Nenhum item no carrinho</p>
+        </div>
+        <div class="Total">
+            <p>Total: R$0.00</p>
+        </div>
+        <button class="checkout-button">Checkout</button>
     </div>
 
     <section class="produtos">
@@ -58,7 +71,7 @@
             <label for="quantity" class="product-label">Quantidade:</label>
             <input type="number" id="quantity" class="product-quantity" min="1" value="1" max="3">
 
-            <button class="buy-button">Add ao carrinho</button>
+            <button class="buy-button" id="add-to-cart">Add ao carrinho</button>
         </div>
     </section>
 
@@ -86,6 +99,9 @@
             });
         });
     </script>
+
+    <script src="scriptcarrinho.js"></script>
 </body>
+
 
 </html>
