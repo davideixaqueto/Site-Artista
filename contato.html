@@ -1,0 +1,61 @@
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davideixaqueto - Contato</title>
+    <link rel="stylesheet" href="contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="./index.html">INÍCIO</a></li>
+            <li><a href="./sobre.html">SOBRE</a></li>
+            <li><a href="./merch.html">MERCH</a></li>
+            <li><a href="./discografia.html">DISCOGRAFIA</a></li>
+            <li><a href="./contato.html">CONTATO</a></li>
+            <li><a href="./cadastro.html">CADASTRE-SE</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-form-section">
+        <form class="contact-form" action="/enviar-contato" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/davideixaqueto"><img src="./IMG/instagramicon.png" alt="Instagram"></a>
+            <a href="https://www.threads.net/@davideixaqueto?hl=pt-br"><img src="./IMG/twittericon.png" alt="Twitter"></a>
+            <a href="https://www.youtube.com/@Davideixaqueto"><img src="./IMG/youtubeicon.png" alt="YouTube"></a>
+            <a href="https://open.spotify.com/intl-pt/artist/29SjJL6KhGIz20QJiVWQea?si=X-S9LmsjRXOnd2W0ATyc_A"><img src="./IMG/spotifyicon.png" alt="Spotify"></a>
+        </div>
+        <div class="footer-text">
+            <p>&copy; <a href="./index.html">2024 DAVIDEIXAQUETO</a> /<a href="./contato.html">CONTATO</a> / <a href="#">TERMOS DE PRIVACIDADE</a> / <a href="#">NEWSLETTER</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davideixaqueto - Cadastro</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="./index.html">INÍCIO</a></li>
+            <li><a href="./sobre.html">SOBRE</a></li>
+            <li><a href="./merch.html">MERCH</a></li>
+            <li><a href="./discografia.html">DISCOGRAFIA</a></li>
+            <li><a href="./contato.html">CONTATO</a></li>
+            <li><a href="./cadastro.html">CADASTRE-SE</a></li>
+        </ul>
+    </nav>
+
+    <section class="signup-section">
+        <form class="signup-form" action="/enviar-cadastro" method="POST">
+            <h2>Fazer Login</h2>
+
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+
+            <div class="social-login">
+                <p>Ou faça Login com:</p>
+                <button class="google-btn"><img src="./IMG/google.png" alt="" width="15px">    Google</button>
+                <button class="facebook-btn"><img src="./IMG/apple.png" alt="" width="20px"> Apple</button>
+            </div>
+
+            <p class="login-option">Não possui conta? <a href="./cadastro.html">Cadastre-se aqui</a></p>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-text">
+            <p>&copy; <a href="./index.html">2024 DAVIDEIXAQUETO</a> /<a href="./contato.html">CONTATO</a> / <a href="#">TERMOS DE PRIVACIDADE</a> / <a href="#">NEWSLETTER</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

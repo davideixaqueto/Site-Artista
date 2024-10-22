@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Red Hat Boxset</title>
+    <link rel="stylesheet" href="merch2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="./index.html">INÍCIO</a></li>
+            <li><a href="./sobre.html">SOBRE</a></li>
+            <li><a href="./merch.html">MERCH</a></li>
+            <li><a href="./discografia.html">DISCOGRAFIA</a></li>
+            <li><a href="./contato.html">CONTATO</a></li>
+            <li><a href="./cadastro.html">CADASTRE-SE</a></li>
+        </ul>
+    </nav>
+
+    <div class="carrinho"><img src="./IMG/carrinho.png" alt="">
+    </div>
+
+    <section class="produtos">
+        <div class="product-gallery">
+            <div class="thumbnails">
+                <img src="./IMG/bandanadusadusa.gif" alt="Preview 1" class="thumbnail">
+                <img src="./IMG/dusadusa.png" alt="Preview 2" class="thumbnail">
+            </div>
+            <div class="main-image">
+                <img src="./IMG/bandanadusadusa.gif" alt="All Red Hat Boxset" class="product-image">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h3 class="product-name">BANDANA DUSADUSA</h3>
+            <p class="product-price">$30.00</p>
+            <p class="product-info">LIMITADO 3 POR PESSOA</p>
+            <p class="product-info">Envios a partir de 13, out 2024</p>
+
+            <label for="size" class="product-label">Size:</label>
+            <select id="size" class="product-size">
+                <option value="UNIQUESIZE">TAMANHO ÚNICO</option>
+            </select>
+
+            <label for="quantity" class="product-label">Quantidade:</label>
+            <input type="number" id="quantity" class="product-quantity" min="1" value="1" max="3">
+
+            <button class="buy-button">Add ao carrinho</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><img src="./IMG/instagramicon.png" alt=""></a>
+            <a href="#"><img src="./IMG/twittericon.png" alt=""></a>
+            <a href="#"><img src="./IMG/youtubeicon.png" alt=""></a>
+            <a href="#"><img src="./IMG/spotifyicon.png" alt=""></a>
+        </div>
+        <div class="footer-text">
+            <p>&copy; <a href="./index.html">2024 DAVIDEIXAQUETO</a> /<a href="./contato.html">CONTATO</a> / <a
+                    href="#">TERMOS DE PRIVACIDADE</a> / <a href="#">NEWSLETTER</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para mudar a imagem principal ao clicar na miniatura
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const mainImage = document.querySelector('.product-image');
+
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', function () {
+                mainImage.src = this.src;
+            });
+        });
+    </script>
+</body>
+
+</html>
