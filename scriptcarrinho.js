@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        TotalElement.textContent = `Total: $${Total.toFixed(2)}`;
+        TotalElement.textContent = `Total: R$${Total.toFixed(2)}`;
 
         const removeButtons = document.querySelectorAll('.remove-item');
         removeButtons.forEach(button => {
