@@ -34,6 +34,7 @@ a {
     width: 30px;
     height: 20px;
     cursor: pointer;
+    z-index: 50;
 }
 .menu-icon {
     position: absolute;
